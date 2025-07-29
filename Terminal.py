@@ -69,6 +69,10 @@ class Order:
 
 
 class Terminal:
+    """
+    Reference DOC for T-Kassa:
+    https://www.tbank.ru/kassa/dev/payments/
+    """
     Terminal_id: int
     Terminal_pass: str
 
