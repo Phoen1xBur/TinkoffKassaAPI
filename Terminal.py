@@ -16,22 +16,6 @@ class Tinkoff:
     }
 
 
-class PaymentStatus(StrEnum):
-    NEW = 'Новый платеж сформирован'
-    FORM_SHOWED = 'Платежная форма открыта'
-
-
-class Payment:
-    Success: bool
-    Amount: int
-    Status: PaymentStatus
-    PaymentId: str
-
-    def update(self, json):
-        for key, value in json.items():
-            setattr(self, key, value)
-
-
 class Order:
     """
     Класс заказа, для формирования и хранения данных о заказе
